@@ -1,11 +1,10 @@
 {
-  "manifest_version": 0.5,
+  "manifest_version": 2,
 
   "name": "RIP-Word Replacement",
   "description": "Wow we are just starting this.",
   "version": "0.5",
 
-  "default locale": "en",
   "icons": {
     "16": "Icon16.png",
     "48": "Icon48.png",
