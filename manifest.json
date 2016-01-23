@@ -1,11 +1,11 @@
 {
-  "manifest_version": 0.5,
+  "manifest_version": 2,
 
   "name": "RIP-Word Replacement",
-  "description": "Wow we are just starting this.",
+  "description": "Word replacement tool for blocking words you don't want to see!",
   "version": "0.5",
 
-  "default locale": "en",
+
   "icons": {
     "16": "Icon16.png",
     "48": "Icon48.png",
