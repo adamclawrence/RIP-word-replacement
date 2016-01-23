@@ -5,6 +5,13 @@
   "description": "Wow we are just starting this.",
   "version": "0.5",
 
+  "default locale": "en",
+  "icons": {
+    "16": "Icon16.png",
+    "48": "Icon48.png",
+    "128":"Icon128.png"
+    },
+
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
