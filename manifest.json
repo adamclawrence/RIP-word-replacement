@@ -5,7 +5,10 @@
   "description": "Word replacement tool for blocking words you don't want to see!",
   "version": "0.5",
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3bc2aeb890a288f6b2810591de3118e7c39605e6
   "icons": {
     "16": "Icon16.png",
     "48": "Icon48.png",
