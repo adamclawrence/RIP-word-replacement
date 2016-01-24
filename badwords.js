@@ -17,7 +17,9 @@ function checkDom(allKeys) {
                 word += "|";
             }
             // thank you google for regex to escape regex -- insert meme
+            word += "\\b";
             word += keys[i].replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+            word += "\\b";
         }
         console.log(word);
         var re = new RegExp(word,"gi");

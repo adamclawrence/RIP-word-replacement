@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   addButton.addEventListener('click', function() {
     //window.open('https://www.facebook.com','_blank');
     addWord();
-    getAllKeys(newTextElements);
+    // getAllKeys(newTextElements);
 
   }, false);
 
@@ -20,12 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 function addWord() {
-var word = document.getElementById('wordToReplace').textContent;
-var replacement = document.getElementById('replacementWord').textContent;
-console.log(word);
-    chrome.storage.sync.set({word : replacement}, function() {
-          // Notify that we saved.
-          console.log('custom words saved');
-        });
-
+  var word = document.getElementById('wordToReplace').value;
+  var replacement = document.getElementById('replacementWord').value;
+  console.log(word);
+  var inputObj = Object();
+  inputObj[word] = replacement;
+  console.log(inputObj);
+  chrome.storage.sync.set(inputObj, function() {
+    // Notify that we saved.
+    console.log('custom words saved');
+  });
 }
