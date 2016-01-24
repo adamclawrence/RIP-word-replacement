@@ -10,7 +10,6 @@ function checkDom(allKeys) {
     if (Object.keys(allKeys).length != 0) { // wtf is wrong with this language
         var innerStr;
         var keys = Object.keys(allKeys);
-        keys.splice(0,1);
         var word;
         for (var i = 0; i < keys.length; i++) {
             if (i > 1 && i < keys.length - 1) {
