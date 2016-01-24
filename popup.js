@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 function addWord() {
-  var word = document.getElementById('wordToReplace').value;
-  var replacement = document.getElementById('replacementWord').value;
+  var word = document.getElementById('wordToReplace').value.trim();
+  var replacement = document.getElementById('replacementWord').value.trim();
   console.log(word);
   var inputObj = Object();
   inputObj[word] = replacement;
