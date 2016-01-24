@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!--Import noogle Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 <title>RIP Word Replacement Options</title>
 <style>
 body {
-            background-color: #999999;
-            font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+            background-color: white;//#999999;
+            /*font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;*/
         }
 </style>
 <script src="options.js"></script>
 </head>
-<body>
+<body >
 
-<h2>Bad word - Good word Pairs:</h2>
+<h2 class="grey-text text-darken-4 center-align">Bad word - Good word Pairs:</h2>
 
-<table id="wordTable">
+<h5>
+<table id="wordTable" class="bordered centered responsive-table grey darken-3 white-text">
     <thead>
         <tr>
             <th>Bad Word(s)</th>
@@ -24,7 +30,7 @@ body {
     <tbody>
     </tbody>
 </table>
-
+</h5>
 </body>
 </html>
 <!--// Saves options to chrome.storage
