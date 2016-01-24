@@ -2,13 +2,19 @@
 <html>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <!--Import noogle Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
         <title>RIP Word Replacement</title>
         <script src="popup.js"></script>
         <style>
 
         body {
             background-color: #999999;
-            min-width:410px;
+            min-width:400px;
             font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
             font-size: 17px;
         }
@@ -115,19 +121,53 @@
         </style>
     </head>
     <body>
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 
-        <p>
-            <span class = "go_left" > Word To Replace  </span>
-            <span class ="go_right"> Replacement Word </span></br>
-            <input class="go_left" type="text" name="WordToReplace">
-            <input class ="rightBar" type="text" name="ReplacementWord">
-            <button class="addButton" id="add">&#x2795;</button>
-        </br>
-    </p>
-    <p>
-            <input type="checkbox" name="LanguageFilter" value="Language Filter" id="filter" />Language Filter
-        <button class="settingsButton" id="settings">Settings</button>
-    </p>
+      <!--Word to replace label-->
+            <div class="row">
+            <div class="input-field col s4">
+          <input placeholder="Word To Replace" class="white-text text-darken-2" id="wordToReplace" type="text" class="validate">
+         <!--  <label class="active" for="first_name">Word To Replace</label> -->
+        </div>
+    <!--replacing word label-->
+        <div class="input-field col s5">
+          <input placeholder="Replacement Word" class="white-text text-darken-2" id="replacementWord" type="text" class="validate">
+          <!-- <label class="active" for="last_name">Replacement Word</label> -->
+        </div>
+        <div class="col s2">
+            <!--add button-->
+            <a id="add"class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+    </div>
+
+
+        <!--language filter checkbox-->
+        <div class="row">
+
+            <div class="col s9">
+
+         <div class="switch">
+            <label class="white-text text-darken-2 ">
+              Language Filter Off
+              <input type="checkbox" id="filter" class=" white-text text-darken-2">
+              <span class="lever" ></span>
+              Language Filter On
+            </label>
+        </div>
+
+        </div>
+
+        <div class="col s3">
+             <i class="white material-icons" id="settings">settings</i>
+         </div>
+
+  </div>
+
+
+
+</div>
     </body>
 
 </html>
