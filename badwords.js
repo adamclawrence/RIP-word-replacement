@@ -18,15 +18,19 @@ function getAllKeys(textElements) {
 
 function checkDom(allKeys) {
     console.log(allKeys);
-    var innerStr;
-    for (var i = 0; i < newTextElements.length; i++) {
-        innerStr = newTextElements[i].nodeValue;
-        // console.log(innerStr);
-        var word = Object.keys(allKeys)[0];
-        console.log(word);
-        // word = "google";
-        var re = new RegExp(word,"gi");
-        // newTextElements[i].nodeValue = innerStr.replace(/\bGoogle\b/gi,'noogle');
-        newTextElements[i].nodeValue = innerStr.replace(re,allKeys[word]);
+    if (allKeys !== undefined && allKeys !== null && !allKeys) { // wtf is wrong with this language
+        var innerStr;
+        for (var i = 0; i < newTextElements.length; i++) {
+            innerStr = newTextElements[i].nodeValue;
+            // console.log(innerStr);
+            var word = Object.keys(allKeys)[0];
+            console.log(word);
+            // word = "google";
+            var re = new RegExp(word,"gi");
+            // newTextElements[i].nodeValue = innerStr.replace(/\bGoogle\b/gi,'noogle');
+            newTextElements[i].nodeValue = innerStr.replace(re,allKeys[word]);
+        }
+    } else {
+        console.log("nothing to do");
     }
 }
