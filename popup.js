@@ -13,10 +13,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }, false);
 
-  var filterButton = document.getElementById('filter');
-  filterButton.addEventListener('click', function() {
-    storeBadWordPairs();
-    // window.open('options.html','_blank');
-
-  }, false);
 }, false);
