@@ -3,7 +3,6 @@ go_through_dom(document.body, textElements);
 console.log(textElements.length);
 
 // js for storage
-// storeBadWordPairs();
 getAllKeys(textElements);
 
 function go_through_dom(node, textElements) {
