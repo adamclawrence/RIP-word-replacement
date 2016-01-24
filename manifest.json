@@ -20,12 +20,13 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["rip.js"],
+      "js": ["badwords.js", "rip.js"],
       "run_at": "document_end"
     }
   ],
   "permissions": [
     "activeTab",
-    "https://ajax.googleapis.com/"
+    "https://ajax.googleapis.com/",
+    "storage"
   ]
 }
