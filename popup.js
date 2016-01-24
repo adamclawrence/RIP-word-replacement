@@ -4,9 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var addButton = document.getElementById('add');
 
   addButton.addEventListener('click', function() {
-    //window.open('https://www.facebook.com','_blank');
     addWord();
-    // getAllKeys(newTextElements);
+    window.close();
 
   }, false);
 
